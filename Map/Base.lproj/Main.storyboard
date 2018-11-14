@@ -43,6 +43,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dispMap" destination="KBv-QU-FSd" id="mnP-Iz-HFG"/>
+                        <outlet property="inputText" destination="TjI-12-WTn" id="0Av-1g-a0G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
