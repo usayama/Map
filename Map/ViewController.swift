@@ -9,11 +9,13 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // テキストフィールドのデリゲート通知先を設定
+        inputText.delegate = self
     }
 
     @IBOutlet weak var inputText: UITextField!
