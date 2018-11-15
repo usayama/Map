@@ -64,5 +64,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // デフォルト操作を行うのでTrueを返す
         return true
     }
+    @IBAction func changeMapButton(_ sender: UIButton) {
+        
+    }
 }
 
