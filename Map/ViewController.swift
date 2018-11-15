@@ -64,8 +64,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // デフォルト操作を行うのでTrueを返す
         return true
     }
+    
+    // ボタンを押すごとにマップの表示タイプを変更
     @IBAction func changeMapButton(_ sender: UIButton) {
-        
+        switch dispMap.mapType {
+        case .standard:
+            dispMap.mapType = .satellite
+        case .satellite:
+            dispMap.mapType = .hybrid
+        case .hybrid:
+            dispMap.mapType = .hybridFlyover
+        case .hybridFlyover:
+            dispMap.mapType = .satelliteFlyover
+        case .satelliteFlyover:
+            dispMap.mapType = .mutedStandard
+        default:
+            dispMap.mapType = .standard
+        }
     }
 }
 
