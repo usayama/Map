@@ -30,14 +30,15 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KBv-QU-FSd">
                                 <rect key="frame" x="0.0" y="50" width="375" height="617"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbu-O1-qJX">
-                                <rect key="frame" x="311" y="614" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbu-O1-qJX">
+                                <rect key="frame" x="337" y="637" width="22" height="22"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fbu-O1-qJX" secondAttribute="bottom" constant="8" id="KVG-2a-rGy"/>
                             <constraint firstItem="KBv-QU-FSd" firstAttribute="top" secondItem="TjI-12-WTn" secondAttribute="bottom" id="V1C-r6-CcB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fbu-O1-qJX" secondAttribute="trailing" constant="16" id="WhW-rN-Lmb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KBv-QU-FSd" secondAttribute="bottom" id="aWq-dY-HWP"/>
                             <constraint firstItem="KBv-QU-FSd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dsh-EF-RTZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TjI-12-WTn" secondAttribute="trailing" id="esW-ag-cym"/>
